@@ -2,8 +2,8 @@ import re
 import time
 
 email_pattern = re.compile(r'''
-                           ^[-\w\d.+]+@[-\w\d+]+\.[\w\d-]+\.?
-                           [\w\d-]+?\.?[\w\d-]+?$
+                           ^[-\w\d.+]+@[-\w\d+]+\.[-\w\d]+\.?
+                           [-\w\d]+?\.?[-\w\d]+?$
                            ''', re.X)
 user_email = input("Enter an email to check:\n> ")
 while 1 > 0:
